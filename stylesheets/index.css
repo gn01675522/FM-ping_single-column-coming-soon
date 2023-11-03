@@ -1,0 +1,329 @@
+main {
+  min-height: 100vh;
+  padding: 81px 27px 37px 28px;
+  background-color: var(--bg-primary);
+}
+
+.ping {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ping__notify {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.ping__notify-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--font-primary);
+}
+
+.ping__notify-title span {
+  color: var(--font-tertiary);
+}
+
+.ping__notify-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ping__notify-content-title {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 32px;
+  color: var(--font-secondary);
+}
+
+.ping__notify-content-title span {
+  font-weight: 700;
+  color: var(--font-primary);
+}
+
+.ping__notify-content-para {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 15px;
+  color: var(--font-primary);
+}
+
+.ping__notify-content-input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 32px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  color: var(--font-primary);
+  border-radius: 28px;
+  border: 1px solid var(--border-normal);
+  box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0);
+}
+
+.ping__notify-content-input::placeholder {
+  color: var(--font-quaternary);
+}
+
+.ping__notify-content-input.submit-error,
+.ping__notify-content-input.submit-success {
+  margin-bottom: 4px;
+}
+
+.ping__notify-content-input.submit-error {
+  border: 1px solid var(--border-error);
+}
+
+.ping__notify-content-input.submit-error ~ .ping__notify-content-message,
+.ping__notify-content-input.submit-success ~ .ping__notify-content-message {
+  display: unset;
+}
+
+.ping__notify-content-input.submit-error ~ .ping__notify-content-message {
+  color: var(--font-error);
+}
+.ping__notify-content-input.submit-success ~ .ping__notify-content-message {
+  color: var(--font-success);
+}
+
+.ping__notify-content-input.submit-error ~ .ping__notify-content-btn,
+.ping__notify-content-input.submit-success ~ .ping__notify-content-btn {
+  margin-top: 20px;
+}
+
+.ping__notify-content-message {
+  display: none;
+  font-size: 10px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 20px;
+  letter-spacing: 0.125px;
+}
+
+.ping__notify-content-btn {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: var(--font-quinary);
+  border: none;
+  border-radius: 28px;
+  background-color: var(--bg-secondary);
+  box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.23);
+  cursor: pointer;
+}
+
+.ping__notify-content-btn:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  border-radius: 28px;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-primary);
+  opacity: 0.204;
+}
+
+.ping__hero {
+  width: 100%;
+  max-width: 640px;
+  min-height: 192px;
+  max-height: 383px;
+  margin-bottom: 120px;
+}
+
+.ping__social {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ping__social-icon {
+  display: flex;
+  width: 120px;
+  height: 31px;
+  justify-content: space-between;
+}
+
+.ping__social-icon-facebook,
+.ping__social-icon-twitter,
+.ping__social-icon-instagram {
+  position: relative;
+  width: 32px;
+  height: 31px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(76, 123, 243, 0.15);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.ping__social-icon-facebook i,
+.ping__social-icon-twitter i,
+.ping__social-icon-instagram i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--bg-secondary);
+}
+
+.ping__social-icon-facebook:hover,
+.ping__social-icon-twitter:hover,
+.ping__social-icon-instagram:hover {
+  background-color: var(--bg-secondary);
+}
+
+.ping__social-icon-facebook:hover > i,
+.ping__social-icon-twitter:hover > i,
+.ping__social-icon-instagram:hover > i {
+  color: white;
+}
+
+.ping__social-copyright {
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 12px;
+  color: var(--font-secondary);
+}
+
+.ping__footer {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ping__footer-attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.ping__footer-attribution a {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 81px 20vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 81px 30vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding: 80px 364px 49px 364px;
+    justify-content: center;
+  }
+  .ping__notify {
+    gap: 40px;
+    margin-bottom: 94px;
+  }
+
+  .ping__notify-title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .ping__notify-content {
+    gap: 16px;
+  }
+
+  .ping__notify-content-title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .ping__notify-content-para {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .ping__notify-content-form {
+    display: flex;
+    gap: 16px;
+  }
+
+  .ping__notify-content-form-group {
+    width: 100%;
+    text-align: start;
+  }
+
+  .ping__notify-content-input {
+    height: 56px;
+    padding: 18px 30px;
+    margin-bottom: unset;
+    font-size: 16px;
+  }
+
+  .ping__notify-content-input.submit-error,
+  .ping__notify-content-input.submit-success {
+    margin-bottom: 6px;
+  }
+
+  .ping__notify-content-input.submit-error ~ .ping__notify-content-btn,
+  .ping__notify-content-input.submit-success ~ .ping__notify-content-btn {
+    margin-top: unset;
+  }
+
+  .ping__notify-content-message {
+    margin-left: 30px;
+    font-size: 12px;
+    letter-spacing: 0.15px;
+  }
+
+  .ping__notify-content-btn {
+    width: 200px;
+    height: 56px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .ping__notify-content-btn:hover::after {
+    content: "";
+    position: absolute;
+    height: 56px;
+  }
+
+  .ping__hero {
+    margin-bottom: 72px;
+  }
+
+  .ping__social {
+    gap: 25px;
+  }
+
+  .ping__social-icon {
+    width: 119px;
+  }
+
+  .ping__social-copyright {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

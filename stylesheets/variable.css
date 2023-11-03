@@ -1,0 +1,13 @@
+:root {
+  --bg-primary: white;
+  --bg-secondary: #4c7bf3;
+  --font-primary: #15202a;
+  --font-secondary: #969696;
+  --font-tertiary: #4c7bf3;
+  --font-quaternary: #b8c7ed;
+  --font-quinary: white;
+  --font-error: #ff5466;
+  --font-success: darkseagreen;
+  --border-normal: #c2d3ff;
+  --border-error: #ff5466;
+}

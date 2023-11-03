@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Wallace Lee" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/reset.css" />
+    <link rel="stylesheet" href="./stylesheets/variable.css" />
+    <link rel="stylesheet" href="./stylesheets/global.css" />
+    <link rel="stylesheet" href="./stylesheets/index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="ping">
+        <div class="ping__notify">
+          <h1 class="ping__notify-title">PING<span>.</span></h1>
+          <div class="ping__notify-content">
+            <h2 class="ping__notify-content-title">
+              We are launching <span>soon!</span>
+            </h2>
+            <p class="ping__notify-content-para">Subscribe and get notified</p>
+          </div>
+          <form class="ping__notify-content-form" id="submitForm">
+            <div class="ping__notify-content-form-group">
+              <input
+                type="text"
+                placeholder="Your email address"
+                class="ping__notify-content-input"
+                id="inputEmail"
+              />
+              <div class="ping__notify-content-message"></div>
+            </div>
+            <button
+              type="button"
+              class="ping__notify-content-btn"
+              id="emailToNotify"
+            >
+              Notify Me
+            </button>
+          </form>
+        </div>
+        <img class="ping__hero" src="./images/illustration-dashboard.png" />
+        <div class="ping__social">
+          <div class="ping__social-icon">
+            <a href="" class="ping__social-icon-facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="" class="ping__social-icon-twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="" class="ping__social-icon-instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <div class="ping__social-copyright">
+            &copy; Copyright Ping. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="ping__footer">
+      <p class="ping__footer-attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Wallace Lee</a>.
+      </p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/8cc43da8a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
