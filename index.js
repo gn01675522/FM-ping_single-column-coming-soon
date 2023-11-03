@@ -9,7 +9,11 @@ const submitForChecked = () => {
 
   const emailValue = emailInput.value;
 
-  if (!regex.test(emailValue)) {
+  if (emailValue.trim().length === 0) {
+    emailInput.classList.remove("submit-success");
+    emailInput.classList.add("submit-error");
+    message.textContent = "Whoops! It looks like you forgot to add your email";
+  } else if (!regex.test(emailValue)) {
     emailInput.classList.remove("submit-success");
     emailInput.classList.add("submit-error");
     message.textContent = "Please provide a valid email address";

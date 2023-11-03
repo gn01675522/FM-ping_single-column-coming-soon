@@ -18,6 +18,7 @@ main {
   flex-direction: column;
   gap: 32px;
   text-align: center;
+  align-items: center;
   margin-bottom: 72px;
 }
 
@@ -55,6 +56,11 @@ main {
   font-weight: 300;
   line-height: 15px;
   color: var(--font-primary);
+}
+
+.ping__notify-content-form {
+  width: 100%;
+  max-width: 637px;
 }
 
 .ping__notify-content-input {
@@ -270,11 +276,11 @@ main {
   }
 
   .ping__notify-content-form-group {
-    width: 100%;
     text-align: start;
   }
 
   .ping__notify-content-input {
+    width: 421px;
     height: 56px;
     padding: 18px 30px;
     margin-bottom: unset;
@@ -300,6 +306,7 @@ main {
   .ping__notify-content-btn {
     width: 200px;
     height: 56px;
+    flex: 1;
     font-size: 16px;
     line-height: 19px;
   }
